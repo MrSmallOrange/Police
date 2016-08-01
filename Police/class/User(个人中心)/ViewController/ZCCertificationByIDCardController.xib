@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZCCertificationByIDCardController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="641"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传照片进行实名认证" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PE3-AM-spZ">
+                    <rect key="frame" x="20" y="20" width="170" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QcW-hP-MoJ">
+                    <rect key="frame" x="0.0" y="61" width="381" height="261"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="身份证正面" translatesAutoresizingMaskIntoConstraints="NO" id="57N-VW-BVD">
+                            <rect key="frame" x="10" y="10" width="180" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="180" id="0ez-Kp-JHB"/>
+                                <constraint firstAttribute="height" constant="100" id="B8Q-73-YmU"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="身份证反面" translatesAutoresizingMaskIntoConstraints="NO" id="bAX-ym-hv2">
+                            <rect key="frame" x="10" y="120" width="180" height="100"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q0A-pg-PRS">
+                            <rect key="frame" x="200" y="10" width="10" height="241"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="10" id="amI-Zj-RYP"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="证件照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdW-Il-ixf">
+                            <rect key="frame" x="66" y="230" width="68" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本人与证件合照" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZB-4E-gFO">
+                            <rect key="frame" x="236" y="230" width="119" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="人和证件" translatesAutoresizingMaskIntoConstraints="NO" id="chw-lg-pjJ">
+                            <rect key="frame" x="220" y="10" width="151" height="210"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Q0A-pg-PRS" firstAttribute="bottom" secondItem="bAX-ym-hv2" secondAttribute="bottom" id="0n7-ra-iwI"/>
+                        <constraint firstItem="bAX-ym-hv2" firstAttribute="top" secondItem="57N-VW-BVD" secondAttribute="bottom" constant="10" id="5kS-m1-zEc"/>
+                        <constraint firstAttribute="width" constant="450" id="AGf-pE-axx"/>
+                        <constraint firstAttribute="trailing" secondItem="chw-lg-pjJ" secondAttribute="trailing" constant="10" id="CWy-4F-RNq"/>
+                        <constraint firstItem="57N-VW-BVD" firstAttribute="leading" secondItem="QcW-hP-MoJ" secondAttribute="leading" constant="10" id="Jy6-Vt-wwt"/>
+                        <constraint firstItem="bAX-ym-hv2" firstAttribute="width" secondItem="57N-VW-BVD" secondAttribute="width" id="KCg-FF-bYL"/>
+                        <constraint firstItem="bAX-ym-hv2" firstAttribute="height" secondItem="57N-VW-BVD" secondAttribute="height" id="KJf-Du-bkF"/>
+                        <constraint firstItem="TdW-Il-ixf" firstAttribute="top" secondItem="bAX-ym-hv2" secondAttribute="bottom" constant="10" id="KOk-9x-ta9"/>
+                        <constraint firstItem="lZB-4E-gFO" firstAttribute="centerX" secondItem="chw-lg-pjJ" secondAttribute="centerX" id="Lql-2b-JRJ"/>
+                        <constraint firstItem="chw-lg-pjJ" firstAttribute="bottom" secondItem="bAX-ym-hv2" secondAttribute="bottom" id="Mjm-Nz-ZLP"/>
+                        <constraint firstItem="bAX-ym-hv2" firstAttribute="leading" secondItem="QcW-hP-MoJ" secondAttribute="leading" constant="10" id="NeJ-mn-P4A"/>
+                        <constraint firstItem="Q0A-pg-PRS" firstAttribute="leading" secondItem="57N-VW-BVD" secondAttribute="trailing" constant="10" id="PGW-nn-SA1"/>
+                        <constraint firstAttribute="bottom" secondItem="TdW-Il-ixf" secondAttribute="bottom" constant="10" id="R0J-f2-cVw"/>
+                        <constraint firstItem="Q0A-pg-PRS" firstAttribute="top" secondItem="57N-VW-BVD" secondAttribute="top" id="RIb-Ff-PeU"/>
+                        <constraint firstItem="TdW-Il-ixf" firstAttribute="centerX" secondItem="bAX-ym-hv2" secondAttribute="centerX" id="fFD-xh-5Lc"/>
+                        <constraint firstAttribute="height" constant="450" id="fi8-Vk-uiw"/>
+                        <constraint firstItem="Q0A-pg-PRS" firstAttribute="bottom" secondItem="TdW-Il-ixf" secondAttribute="bottom" id="hj5-PI-Btw"/>
+                        <constraint firstAttribute="bottom" secondItem="bAX-ym-hv2" secondAttribute="bottom" constant="10" id="jBJ-gH-gN4"/>
+                        <constraint firstItem="chw-lg-pjJ" firstAttribute="leading" secondItem="Q0A-pg-PRS" secondAttribute="trailing" constant="10" id="jcT-lz-vXf"/>
+                        <constraint firstItem="bAX-ym-hv2" firstAttribute="centerY" secondItem="QcW-hP-MoJ" secondAttribute="centerY" id="kWw-2u-lvk"/>
+                        <constraint firstItem="chw-lg-pjJ" firstAttribute="top" secondItem="57N-VW-BVD" secondAttribute="top" id="kff-9w-T8W"/>
+                        <constraint firstItem="lZB-4E-gFO" firstAttribute="top" secondItem="chw-lg-pjJ" secondAttribute="bottom" constant="10" id="kxA-Tj-ggj"/>
+                        <constraint firstItem="57N-VW-BVD" firstAttribute="top" secondItem="QcW-hP-MoJ" secondAttribute="top" constant="10" id="rei-Jk-yib"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="AGf-pE-axx"/>
+                            <exclude reference="fi8-Vk-uiw"/>
+                            <exclude reference="jBJ-gH-gN4"/>
+                            <exclude reference="kWw-2u-lvk"/>
+                            <exclude reference="0n7-ra-iwI"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QcW-hP-MoJ" secondAttribute="trailing" id="agT-kx-3EL"/>
+                <constraint firstItem="QcW-hP-MoJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g4o-8d-86o"/>
+                <constraint firstItem="PE3-AM-spZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="n3a-yW-bb4"/>
+                <constraint firstItem="QcW-hP-MoJ" firstAttribute="top" secondItem="PE3-AM-spZ" secondAttribute="bottom" constant="20" id="u05-If-pqw"/>
+                <constraint firstItem="PE3-AM-spZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="ujs-Qq-3YP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="157.5" y="356.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="人和证件" width="620" height="465"/>
+        <image name="身份证反面" width="593" height="375"/>
+        <image name="身份证正面" width="590" height="389"/>
+    </resources>
+</document>

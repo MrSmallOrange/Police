@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  Police
+//
+//  Created by ZhangCheng on 16/7/21.
+//  Copyright © 2016年 MrSmallOrange. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+ZCExtension.h"
+#import "UIViewController+ZCExtension.h"
+#import "ZCConst.h"
+
+
+
+
+#define ZCScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ZCScreenWidth [UIScreen mainScreen].bounds.size.width
+#endif /* PrefixHeader_pch */

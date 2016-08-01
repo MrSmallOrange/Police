@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZCPageView">
+            <rect key="frame" x="0.0" y="0.0" width="447" height="227"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tVf-SJ-CHq">
+                    <rect key="frame" x="0.0" y="0.0" width="447" height="227"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4te-03-JlV">
+                    <rect key="frame" x="204" y="180" width="39" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="Wk5-e3-H3l"/>
+                        <constraint firstAttribute="width" constant="39" id="oEp-V1-Mkm"/>
+                    </constraints>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tVf-SJ-CHq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Gv-y3-8ad"/>
+                <constraint firstAttribute="bottom" secondItem="tVf-SJ-CHq" secondAttribute="bottom" id="2VQ-5t-jO1"/>
+                <constraint firstAttribute="bottom" secondItem="4te-03-JlV" secondAttribute="bottom" constant="10" id="Jae-E6-eqX"/>
+                <constraint firstAttribute="trailing" secondItem="tVf-SJ-CHq" secondAttribute="trailing" id="P0n-N9-OFF"/>
+                <constraint firstItem="4te-03-JlV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PHK-Zn-9Il"/>
+                <constraint firstItem="tVf-SJ-CHq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dgI-M8-orP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pageControl" destination="4te-03-JlV" id="1Qc-7M-eOf"/>
+                <outlet property="scrollView" destination="tVf-SJ-CHq" id="RJg-or-SbI"/>
+            </connections>
+            <point key="canvasLocation" x="306.5" y="165.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,11 @@
+platform:ios,'7.0'
+target "Police" do
+
+pod "AFNetworking"
+pod "SDWebImage"
+pod "SVProgressHUD"
+pod "MJExtension"
+pod "MJRefresh"
+
+
+end

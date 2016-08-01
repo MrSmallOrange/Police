@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>typeKey</key>
+		<string>ZiXun</string>
+		<key>image</key>
+		<string>ZiXun</string>
+		<key>title</key>
+		<string>网上咨询</string>
+	</dict>
+	<dict>
+		<key>typeKey</key>
+		<string>TouSu</string>
+		<key>image</key>
+		<string>TouSu</string>
+		<key>title</key>
+		<string>网上投诉</string>
+	</dict>
+	<dict>
+		<key>typeKey</key>
+		<string>ChaXun</string>
+		<key>image</key>
+		<string>ChaXun</string>
+		<key>title</key>
+		<string>信息查询</string>
+	</dict>
+	<dict>
+		<key>typeKey</key>
+		<string>YiJianBaoJin</string>
+		<key>image</key>
+		<string>YiJianBaoJin</string>
+		<key>title</key>
+		<string>一键报警</string>
+	</dict>
+	<dict>
+		<key>typeKey</key>
+		<string>SuiShouPai</string>
+		<key>image</key>
+		<string>SuiShouPai</string>
+		<key>title</key>
+		<string>随手拍</string>
+	</dict>
+</array>
+</plist>
